@@ -4,7 +4,7 @@
 
 <% if current_spree_user %>
 <p>Logged in as: <%= current_spree_user.email %></p>
-Yes
+<%= link_to "Logout", spree.logout_path %>
 <% else %>
 no
 <% end %>
